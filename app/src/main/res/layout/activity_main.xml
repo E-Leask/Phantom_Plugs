@@ -47,6 +47,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <View android:id="@+id/spacer_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#474747"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rectangle_3rd_from_top" />
+
     <View android:id="@+id/rectangle_4th_from_top"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -56,14 +65,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <View android:id="@+id/spacer_1"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#474747"
-        android:visibility="visible"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/rectangle_3rd_from_top" />
+
+
     <View android:id="@+id/spacer_2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -84,41 +87,31 @@
         android:id="@+id/btn_addRoom"
         android:scaleType="fitXY"/>
 
-
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+    <TextView
+        android:id="@+id/First_Room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/room_1"
+        android:layout_toLeftOf="@+id/btn_addRoom"
+        android:layout_toStartOf="@+id/btn_addRoom"
+        android:text="Devices/Rooms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:textColor="@color/colorWhite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
+        android:id="@+id/txt_Room1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:text="Devices/Rooms"
-        android:layout_toLeftOf="@+id/btn_addRoom"
-        android:layout_toStartOf="@+id/btn_addRoom" />
-
-    <TextView
-        android:textColor="@color/colorWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:text="Devices/Rooms"
-        android:layout_toLeftOf="@+id/btn_addRoom"
-        android:layout_toStartOf="@+id/btn_addRoom" />
-
+        android:text="Room 1"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_below="@+id/title_block"
+        android:layout_alignLeft="@+id/First_Room"
+        android:layout_alignStart="@+id/First_Room" />
     <Button
         android:text="Button"
         android:layout_width="wrap_content"
@@ -128,5 +121,60 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="13dp"
         android:onClick="openSettings" />
+
+    <TextView
+        android:id="@+id/txt_Fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spacer_2"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="20dp"
+        android:text="Fan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_Room1"
+        android:layout_alignStart="@+id/txt_Room1"
+        android:layout_below="@+id/txt_Room1"
+        android:layout_marginTop="21dp"
+        android:text="Lamp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp" />
+
+    <ImageButton
+        android:id="@+id/btn_s_Fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spacer_2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:layout_below="@+id/spacer_1"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spacer_1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_Room1"
+        android:layout_toEndOf="@+id/First_Room"
+        android:layout_toRightOf="@+id/First_Room"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
 
 </RelativeLayout>
