@@ -13,12 +13,7 @@
 
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/button">
 
-    </RelativeLayout>
 
     <View android:id="@+id/title_block"
         android:layout_width="match_parent"
@@ -26,6 +21,23 @@
         android:layout_alignParentTop="true"
         android:background="#68228b"
         android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/First_Room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devices/Rooms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_addRoom"
+        android:layout_above="@+id/room_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <View android:id="@+id/room_1"
         android:layout_width="match_parent"
@@ -36,14 +48,42 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Room1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Office"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_below="@+id/title_block"
+        android:layout_alignLeft="@+id/First_Room"
+        android:layout_alignStart="@+id/First_Room"
+        android:gravity="center"
+        android:layout_above="@+id/rectangle_3rd_from_top" />
+
     <View android:id="@+id/rectangle_3rd_from_top"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="#ffffff"
         android:visibility="visible"
         android:layout_below="@+id/room_1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Lamp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp"
+        android:layout_alignLeft="@+id/txt_Room1"
+        android:layout_alignStart="@+id/txt_Room1"
+        android:layout_below="@+id/room_1"
+        android:layout_above="@+id/spacer_1"
+        android:gravity="center"/>
 
     <View android:id="@+id/spacer_1"
         android:layout_width="match_parent"
@@ -62,15 +102,110 @@
         android:layout_below="@+id/spacer_1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/txt_Fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Fan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp"
+        android:layout_below="@+id/spacer_1"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/rectangle_4th_from_top"
+        android:layout_alignRight="@+id/txt_Room1"
+        android:layout_alignEnd="@+id/txt_Room1" />
 
-    <View android:id="@+id/spacer_2"
+    <View
+        android:id="@+id/room_2"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="50dp"
         android:background="#474747"
         android:visibility="visible"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/rectangle_4th_from_top" />
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_Room2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="Living Room"
+        android:gravity="center"
+        android:layout_below="@+id/rectangle_4th_from_top"
+        android:layout_alignLeft="@+id/txt_Fan"
+        android:layout_alignStart="@+id/txt_Fan"
+        android:layout_alignBottom="@+id/room_2" />
+
+        <View android:id="@+id/rectangle_5th_from_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:visibility="visible"
+            android:layout_below="@+id/room_2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txt_TallLamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tall Lamp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_above="@+id/rectangle_6th_from_top"
+        android:layout_alignLeft="@+id/txt_Room2"
+        android:layout_alignStart="@+id/txt_Room2"
+        android:layout_below="@+id/room_2" />
+
+        <View android:id="@+id/spacer_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#474747"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rectangle_5th_from_top" />
+
+        <View android:id="@+id/rectangle_6th_from_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ffffff"
+            android:visibility="visible"
+            android:layout_below="@+id/spacer_2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txt_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T.V."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorBlack"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_below="@+id/rectangle_5th_from_top"
+        android:layout_alignLeft="@+id/txt_Room2"
+        android:layout_alignStart="@+id/txt_Room2"
+        android:layout_alignBottom="@+id/rectangle_6th_from_top"
+        android:layout_alignRight="@+id/txt_Fan"
+        android:layout_alignEnd="@+id/txt_Fan" />
+
+        <View android:id="@+id/spacer_3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#474747"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rectangle_6th_from_top" />
 
     <ImageButton
         android:layout_width="60dp"
@@ -84,86 +219,93 @@
         android:id="@+id/btn_addRoom"
         android:scaleType="fitXY"/>
 
-    <TextView
-        android:id="@+id/First_Room"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/room_1"
-        android:layout_toLeftOf="@+id/btn_addRoom"
-        android:layout_toStartOf="@+id/btn_addRoom"
-        android:text="Devices/Rooms"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorWhite"
-        android:textSize="40sp"
-        android:layout_alignParentTop="true"
-        android:gravity="center"/>
-
-    <TextView
-        android:textColor="@color/colorWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_Room1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:text="Room 1"
-        android:layout_marginLeft="29dp"
-        android:layout_marginStart="29dp"
-        android:layout_below="@+id/title_block"
-        android:layout_alignLeft="@+id/First_Room"
-        android:layout_alignStart="@+id/First_Room"
-        android:gravity="center"
-        android:layout_above="@+id/rectangle_3rd_from_top" />
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="13dp"
-        android:onClick="openSettings" />
-
-    <TextView
-        android:id="@+id/txt_Fan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:text="Fan"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorBlack"
-        android:textSize="32sp"
-        android:layout_below="@+id/spacer_1"
-        android:layout_above="@+id/spacer_2"
-        android:gravity="center"/>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lamp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@color/colorBlack"
-        android:textSize="32sp"
-        android:layout_alignLeft="@+id/txt_Room1"
-        android:layout_alignStart="@+id/txt_Room1"
-        android:layout_below="@+id/room_1"
-        android:layout_above="@+id/spacer_1"
-        android:gravity="center"/>
 
     <ImageButton
         android:id="@+id/btn_s_Fan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/spacer_2"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:srcCompat="@android:drawable/ic_menu_manage"
         android:layout_below="@+id/spacer_1"
-        android:layout_alignLeft="@+id/btn_s_Lamp"
-        android:layout_alignStart="@+id/btn_s_Lamp"
-        android:onClick="openSettings" />
+        android:onClick="openSettings"
+        android:layout_toRightOf="@+id/txt_Room2"
+        android:layout_above="@+id/room_2"
+        android:layout_alignLeft="@+id/btn_addRoom"
+        android:layout_alignStart="@+id/btn_addRoom" />
+
+    <ImageButton
+        android:id="@+id/btn_p_Fan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="openSettings"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:scaleX="true"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        tools:layout_marginLeft="10dp"
+        android:layout_above="@+id/rectangle_6th_from_top"
+        android:layout_below="@+id/room_2"
+        android:layout_alignRight="@+id/imageButton4"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:layout_toRightOf="@+id/txt_Room2"
+        android:layout_toEndOf="@+id/txt_Room2" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/room_2"
+        android:layout_below="@+id/spacer_1"
+        android:layout_marginRight="50dp"
+        android:layout_toEndOf="@+id/txt_Room2"
+        android:layout_toLeftOf="@+id/btn_s_Fan"
+        android:layout_toRightOf="@+id/txt_Room2"
+        android:background="@android:color/transparent"
+        android:onClick="openSettings"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:scaleX="true"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        tools:layout_marginLeft="10dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="openSettings"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:scaleX="true"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        tools:layout_marginLeft="10dp"
+        android:layout_below="@+id/rectangle_5th_from_top"
+        android:layout_alignRight="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5"
+        android:layout_toRightOf="@+id/txt_Room2"
+        android:layout_toEndOf="@+id/txt_Room2"
+        android:layout_above="@+id/spacer_3" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="openSettings"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:scaleX="true"
+        app:srcCompat="@android:drawable/ic_lock_power_off"
+        tools:layout_marginLeft="10dp"
+        android:layout_above="@+id/rectangle_4th_from_top"
+        android:layout_toRightOf="@+id/txt_Room2"
+        android:layout_alignRight="@+id/btn_p_Fan"
+        android:layout_alignEnd="@+id/btn_p_Fan"
+        android:layout_below="@+id/room_1" />
 
     <ImageButton
         android:id="@+id/btn_s_Lamp"
@@ -173,12 +315,42 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/txt_Room1"
-        android:layout_toEndOf="@+id/First_Room"
         android:layout_toRightOf="@+id/First_Room"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:srcCompat="@android:drawable/ic_menu_manage"
-        android:onClick="openSettings"/>
+        android:onClick="openSettings"
+        android:layout_alignLeft="@+id/btn_s_Fan"
+        android:layout_alignStart="@+id/btn_s_Fan" />
+    <ImageButton
+        android:id="@+id/btn_s_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:onClick="openSettings"
+        android:layout_alignBottom="@+id/spacer_3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_s_Fan"
+        android:layout_alignStart="@+id/btn_s_Fan"
+        android:layout_below="@+id/rectangle_5th_from_top" />
+    <ImageButton
+        android:id="@+id/btn_s_TLamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:onClick="openSettings"
+        android:layout_above="@+id/rectangle_6th_from_top"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/room_2"
+        android:layout_alignLeft="@+id/btn_s_TV"
+        android:layout_alignStart="@+id/btn_s_TV" />
+
 
 
 </RelativeLayout>
